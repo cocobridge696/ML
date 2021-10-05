@@ -125,18 +125,7 @@ tsplit=0.2
 train,test=np.split(DATA,[int(len(DATA)*(1-tsplit))])
 train_labels,test_labels=np.split(labels,[int(len(DATA)*(1-tsplit))])
 
-print(train.shape,test.shape)
-#PCA
-from sklearn.decomposition import PCA
-#y_fft=np.array(y_fft).reshape(-1,10000)
-#print(y_fft)
-#n_com=286
-#pca=PCA(n_components=n_com)
-#train_pca=pca.fit_transform((y_fft))
-#print(train_pca.shape)
 
-#train_pca=data.reshape(-1,256,1)
-#print(train_pca.shape)
 
 model=tf.keras.models.Sequential([
     #tf.keras.layers.Conv1D(32,100,activation='relu',input_shape=[None,1]),
