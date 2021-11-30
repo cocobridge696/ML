@@ -46,3 +46,9 @@ Date completed: August 2020
 
 For this project a trained autoencoder was used to predict anomalous data. This is significant for detecting faults in machines, unusual process conditions or potential hazards. For this model the autoencoder was trained using 'normal' data and then when the model was tested, if the recreation error was larger than the max error for the training data then the point was classed as anomalous. The model seemed to perform well as shown by the final plot. The model can be tweaked to detect single anomalies or a series of anomalies. 
 
+## Handwritten equation solver
+File: Equation_Solver.ipynb, hand_wriiten_equation_model.py,handwritten_symbols_classification.h5
+
+Date completed: September 2021
+
+This project involved decomposing images into bounding boxes of symbols using cv2 and then classifying the image using a CNN. The classified images were then used to evaluate the answer to the handwritten equation.  Equation_Solver.ipynb is used to give the answer to the handwritten equation given the model: handwritten_symbols_classification.h5. The model was trained using hand_wriiten_equation_model.py.
