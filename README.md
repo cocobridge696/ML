@@ -35,7 +35,7 @@ Date completed: August 2021
 These projects were done to try and predict the future price of bitcoin using LSTMs and autoregressive integrated moving average (ARIMA) models. Models were constructed using both multi-variate and uni-variate data. Both models failed to predict bitcoins price better than simply using the previous datapoint. These projects were still uploaded as I found it interesting that for accurate predictions (especially when related to stocks) lots of different data could be relevant such as economic cycles and even social media and this data is often not easily accessible. Also, in depth knowledge about the data and what is relevant is required.
 
 ## Anomaly Detection
-File: UV_Bitcoin_price_prediction.ipynb, MV_Bitcoin_price_prediction.ipynb
+File: Weather_anomaly_detection_AE.ipynb
 Date completed: August 2020
 
 For this project a trained autoencoder was used to predict anomalous data. This is significant for detecting faults in machines, unusual process conditions or potential hazards. For this model the autoencoder was trained using 'normal' data and then when the model was tested, if the recreation error was larger than the max error for the training data then the point was classed as anomalous. The model seemed to perform well as shown by the final plot. The model can be tweaked to detect single anomalies or a series of anomalies. 
