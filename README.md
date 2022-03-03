@@ -1,5 +1,5 @@
 # Machine Learning Projects
-A few self-contained independent machine learning projects including autoencoding, classification, regression time series analysis, natural language processing and clustering.
+A few self-contained independent machine learning projects including autoencoding,reinforcement learning, classification, regression time series analysis, natural language processing and clustering.
 
 Most can be opened and ran in google colab.
 ## Black Jack reinforcement learning agent
