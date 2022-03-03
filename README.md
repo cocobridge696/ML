@@ -2,6 +2,13 @@
 A few self-contained independent machine learning projects including autoencoding, classification, regression time series analysis, natural language processing and clustering.
 
 Most can be opened and ran in google colab.
+## Black Jack reinforcement learning agent
+File: BlackJack_Agent.ipynb
+
+Date completed: December 2021
+
+The game of blackjack may be mathematically formalized as an episodic finite Markov Decision Process (MDP). Reinforcement learning agents navigate the states of an MDP, by taking actions in each state under a given policy. This policy is altered to maximize a user-defined reward. Here we apply and compare Q Learning, Dynamic Programming and Monte Carlo methods to a stylised form of Blackjack without an opponent. These methods are applied to both an infinite and finite number of Decks. We show that in the case of infinite decks, the Dynamic Programming method outperforms both the Q Learning and Monte Carlo methods, which both follow a similar learning path and converge to similar values. We demonstrate that in the case of finite decks, an agent which retains a memory of cards played outperforms our old DP agent.
+
 
 ## Air Compressor Control monitoring
 File: Aircompressor_binary_classification.py
