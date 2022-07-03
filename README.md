@@ -1,7 +1,12 @@
 # Machine Learning Projects
-A few self-contained independent machine learning projects including autoencoding,reinforcement learning, classification, regression time series analysis, natural language processing and clustering.
+A few self-contained independent machine learning projects.
+## Self driving car algorithms
+File: self_driving_car.ipynb
 
-Most can be opened and ran in google colab.
+Date completed: June 2022
+
+A comparison of CNNs,Ensemble CNNS, SVMs,Decision trees and autoencoder alogirthms for predicting speed and steering angle from a still frame image taken from a PiCar. The Ensemble CNNs performed the best followed by the single CNN and autoencoder models. Hyperparameters were tuned using a bayesian optimisation scheme (tree partizan model).
+
 ## Black Jack reinforcement learning agent
 File: BlackJack_Agent.ipynb
 
@@ -24,38 +29,3 @@ Date completed: April 2021
 
 This project was done to provide a prediction of windspeed that could be used to control processes relying on wind energy such as green ammonia production. The specific model architecture for this report follows a recurrent neural network (RNN) design using long-term short-term memory (LSTM) cells. RNNs are typically used with time series data in order to predict future values. LSTM cells contain more trainable parameter when compared to other typical RNN cells and therefore are more computationally expensive. Although, LSTM cells were still chosen due to the amount of data available being relatively large thus favouring LSTMs, due to them having more trainable parameters which are able to learn the trends in the data. In smaller datasets this can become undesirable as with more parameter’s models are prone to overfitting the data which essentially means the model is memorizing the training data and therefore when testing the model on validation data a large error is achieved. 
 The model was trained on 40,600 wind data points from an accessible European wind dataset. The model was then validated against 9,930 data points from a separate section of the same dataset. The final model gave a normalised mean squared error of 0.0306. This error can be visualised by plotting the models predicted wind speeds for a range of the validation data points
-
-## Sentiment Analysis
-File: IMDB_sentiment_BoW,Conv1D,MultiCNN_Bclass.ipynb
-
-Date completed: April 2020
-
-For this project the sentiment of IMDB reviews were analysed using a range of methods including bag of words, 1D convolutions and a multi-channel convolution neural network. The bag of words section takes strong influence from TensorFlow tutorials and the natural language processing course on Coursera while the other methods are from a range of sources. The bag of words methods does not consider the order of the words (hence the name) while the other methods do consider the sequence of words. Yet, it turned out that the bag of words model achieved the highest accuracy. The following accuracies were achieved: BoW model acc=90%, CNN model acc=89%, MultiCNN acc=88%.
-
-## Clustering using auto encoded features
-File: MNIST_Aclust.ipynb
-
-Date completed: April 2020
-
-This project involved training an autoencoder to encode and decode data so that the input and output are as similar as possible. After this had been trained the encode and decode part of the model were separated and encoded data was passed into a custom clustering layer that used a t distribution to measure the similarity between the data and the centroids. The accuracy of the clustering was measures using the adjusted rand score, Munkres’ Assignment algorithm and Silhouette score.
-
-## Bitcoin Price predictions
-File: UV_Bitcoin_price_prediction.ipynb, MV_Bitcoin_price_prediction.ipynb
-
-Date completed: August 2021
-
-These projects were done to try and predict the future price of bitcoin using LSTMs and autoregressive integrated moving average (ARIMA) models. Models were constructed using both multi-variate and uni-variate data. Both models failed to predict bitcoins price better than simply using the previous datapoint. These projects were still uploaded as I found it interesting that for accurate predictions (especially when related to stocks) lots of different data could be relevant such as economic cycles and even social media and this data is often not easily accessible. Also, in depth knowledge about the data and what is relevant is required.
-
-## Anomaly Detection
-File: Weather_anomaly_detection_AE.ipynb
-
-Date completed: August 2020
-
-For this project a trained autoencoder was used to predict anomalous data. This is significant for detecting faults in machines, unusual process conditions or potential hazards. For this model the autoencoder was trained using 'normal' data and then when the model was tested, if the recreation error was larger than the max error for the training data then the point was classed as anomalous. The model seemed to perform well as shown by the final plot. The model can be tweaked to detect single anomalies or a series of anomalies. 
-
-## Handwritten equation solver
-File: Equation_Solver.ipynb, hand_wriiten_equation_model.py,handwritten_symbols_classification.h5
-
-Date completed: September 2021
-
-This project involved decomposing images into bounding boxes of symbols using cv2 and then classifying the image using a CNN. The classified images were then used to evaluate the answer to the handwritten equation.  Equation_Solver.ipynb is used to give the answer to the handwritten equation given the model: handwritten_symbols_classification.h5. The model was trained using hand_wriiten_equation_model.py.
