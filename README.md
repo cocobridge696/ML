@@ -1,5 +1,25 @@
 # Machine Learning Projects
 A few self-contained independent machine learning projects.
+## Comparison of RL algorithms in Partially Observable Markov Decision Processes
+File: POMDPs
+
+Date completed: June 2022
+
+Reinforcement learning (RL) agents have proven very effective in Markov decision processes
+(MDP), although far less research exists testing the abilities of RL agents in partially observable
+MDPs, in which the assumption of the certainty in the agents’ state is relaxed. This code tests
+the performance of Deep Q network (DQN), Double Deep Q network (DDQN) and REINFORCE
+agents in the cartpole environment, with added zero mean gaussian noise to create uncertainty
+in the agents state. The findings show that increasing the gaussain noise variance (GNV) by
+0.1 has statistically little effect on performance. This can be contrasted with 0.2 increases in
+GNV which statistically has a great effect on performance. In general the more noise in the
+environment the worse the agent performed, this is due to agent actions based on an increasingly
+inaccurate state as opposed to the true state. The DDQN and REINFORCE agents were the
+most robust to noise, although between the two we cannot statistically say which performs the
+best under high levels of noise.
+
+
+
 ## Self driving car algorithms
 File: self_driving_car.ipynb
 
